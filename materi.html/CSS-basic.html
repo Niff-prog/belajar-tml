@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <!-- meta charset= untuk bahasa  -->
+    <meta charset="UTF-8" />
+    <!-- meta name=viewport = untuk responsif web -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- title : untuk nama web nya -->
+    <title>css-basic.html</title>
+<style>
+    /* ini komentar */
+    /* id di tandai dengan tanda #[nama_id] */
+    #box1 { background-color : aqua; width: 400px; padding : 20px ; text-align : center; margin : 10px; border : 3px solid black;}
+    #title { color : #a0522d }
+    /* Class di tandai dengan tanda . (titik) */
+    .deskripsi { font-size: 16px; color: black;}
+
+    #box2 {  background-color: seagreen;
+        width: 400px;
+        padding: 20px;
+        text-align: center;
+        margin: 10px;  }
+/* font-family : ganti jenis font */
+        p { font-family: 'Times New Roman' ; }
+        h3 { font-family: 'Times New Roman' }
+</style>
+  </head>
+  <body>
+    <div
+      id="box1"
+    >
+      <h1 id="title">part 1</h1>
+      <p class="deskripsi">
+        css bukanlah suatu bahasa pemprograman melainkan seperti sebuah canva.
+      </p>
+    </div>
+
+    <div  id="box2" 
+    > 
+      <h3 style="color: #fff5ee">hsi boarding scholl</h3>
+      <p style="color: rgb(218, 223, 224); font-size: large">
+        berada di sukabumi,kecamatan cikembar
+      </p>
+    </div>
+
+    <div
+      style="
+        background-color: SteelBlue;
+        width: 400px;
+        padding: 20px;
+        text-align: center;
+        margin: 10px;
+      "
+    >
+      <h3 style="color: #fffafa">Kamar ibnu Taimiyyah</h3>
+      <p style="color: #f5f3f2">
+        berisi 18 orang yang dimana akan ada 2 musyrif
+      </p>
+    </div>
+
+    <div
+      style="
+        background-color: Teal;
+        width: 400px;
+        padding: 20px;
+        margin: 10px;
+        border: 4px solid #778899;
+      "
+    >
+      <h2 style="text-align: center">hsi boarding school</h2>
+
+      <h3>list</h3>
+      <ol type="I"">
+        <li>Tomat</li>
+        <li>Brokoli</li>
+        <li>Bawang Merah</li>
+        <li>Bawang Putih</li>
+      </ol>
+<!-- ul>li*3 : buat ul dengan 3 item -->
+ <!-- atribut type : cicle,square,none -->
+      <ul type="circle">
+        <li>Purworejo</li>
+        <li>Solo</li>
+        <li>Jakarta</li>
+        <li>Bali</li>
+      </ul>
+    </div>
+  </body>
+</html>
