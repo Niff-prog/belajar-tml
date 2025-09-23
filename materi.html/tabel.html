@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML 5 TABLE</title>
+    <style>
+        #table-basic {
+            width: 70%;
+            border-collapse: collapse;
+        }
+
+        #table-basic td {
+            padding: 6px;
+            font-size: 16px;
+        }
+
+        #table-basic .bg-blue {
+
+        background-color: darkblue;
+        color: white;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML 5 TABEL</h1>
+    <hr />
+    <h3>Tabel Dasar</h3>
+    <!-- table : untuk buat tabel   -->
+     <!-- tr : untuk membuat baris -->
+      <!-- td : untuk membuat data/kolom -->
+    <table border="1" id="table-basic">
+      <tr >
+        <td>No</td>
+        <td>Nama</td>
+        <td>Asal</td>
+        
+      </tr>
+      <!-- Shortcut : td>tr*3 -->
+      <tr class="bg-blue">
+        <td>1.</td>
+        <td>Naufal</td>
+        <td>Jakarta</td>
+    
+      </tr>
+
+      <tr>
+        <td>2.</td>
+        <td>Rafif</td>
+        <td>Bogor</td>
+      </tr>
+
+      <tr class=bg-blue>
+        <td>3.</td>
+        <td>Khalid</td>
+        <td>Sukabumi</td>
+      </tr>
+    </table>
+
+    <h3>Table Standard HTML 5</h3>
+    <!-- shortcurt : table>thed+tbody+toot -->
+     <!-- th : untuk membuat data/kolom di thed dan kegunaanya mirip bolt-->
+     <table border="1" style="width: 70%;">
+        <thed>
+          <tr>
+            <th>No</th>
+            <th>Tanggal</th>
+            <th>Nama Barang</th>
+            <th>Harga Barang</th>
+          </tr>
+        </thed>
+        <tbody>
+            <tr>
+                <td>1.</td>
+                <td>23/09/2025</td>
+                <td>Es Teh Desa</td>
+                <td>Rp 2.500,-</td>
+            </tr>
+
+            <tr>
+                <td>2.</td>
+                <td>23/09/2025</td>
+                <td>kuota</td>
+                <td>Rp 50.000,-</td>
+            </tr>
+
+            <tr>
+                <!-- rowspan : menggabungkan baris ke bawah -->
+                <td>3.</td>
+                <td>23/09/2025</td>
+                <td rowspan="2">Laudry</td>
+                <td>Rp 20.000,-</td>
+            </tr>
+
+            <tr>
+                <td>4.</td>
+                <td>24/09/2025</td>
+                <td>Rp 20.000,-</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <!-- colspan : untuk menggabungkan kolom -->
+                <td colspan="3"><b>Total Pengeluaran</b></td>
+                <td><b>Rp.92.500,-</b></td>
+            </tr>
+        </tfoot>
+     </table>
+</body>
+</html>

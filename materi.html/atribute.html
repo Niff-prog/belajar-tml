@@ -1,80 +1,154 @@
 <!-- shortcut html:5 = membuat struktur dasar html  -->
- <!-- ketikan html:5 : struktur html -->
-  <!DOCTYPE html>
-  <html lang="en">
+<!-- ketikan html:5 : struktur html -->
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Belajar Attribute HTML</title>
+    <style>
+      .tulisan {
+        text-align: center;
+      }
+
+      .profil {
+        text-align: center;
+      }
+
+      .box {
+        background-color: aliceblue;
+        margin: 10px;
+        padding: 10px;
+        border-radius: 20px;
+        box-shadow: 20px;
+        background-color: bisque;
+      }
+
+      .box2 {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .profil .my-profil {
+        color: blue;
+        font-size: 20px;
+      }
+    </style>
   </head>
   <body>
-
-    <div style="display: flex-direction;column;">
+    <div class="box2">
       <!-- bungkus semua div dengan div lain agar bisa diatur posisinya & flex tujuannya buat kolom atau baris, colum untuk membuat kolomnya ke bawah, sedangkan row untuk membuat barisnya kesamping -->
 
       <header>
-        <h1 style="text-align: center;color: blueviolet;text-shadow: 2px 2px 5px grey; background-color: yellow;">Belajar Attribute HTML</h1>
+        <h1
+          style="
+            text-align: center;
+            color: blueviolet;
+            text-shadow: 2px 2px 5px grey;
+            background-color: yellow;
+          "
+        >
+          Belajar Attribute HTML
+        </h1>
       </header>
 
-      <div style="background-color: aliceblue;margin: 10px;padding: 10 px; border-radius: 20px; box-shadow: 20px;brown">
+      <div class="box">
+        <h3 class="tulisan">Style & Div</h3>
 
-      
-        
-        <h3 style="text-align: center ;">Style & Div</h3>
-
-        <h3 style="text-align: center;">My Profil
-          <p style="font-size: larger; text-align: center;">
-            <span style="font-size: 24px;color: aquamarine;">Nama</span> : <span style="color: brown;">Naufal Hanif</span>
-            <span style="color: deeppink;">BS</span>
-            <span style="color: goldenrod;">jakarta</span>
-            <br>
-            <span style="color: aqua;font-size: 24px; text-align: center;">TTL :</span> <span style="color: chartreuse;">Jakarta Utara,24 Juni 2005</span>
+        <div class="profil">
+          <p class="my-profil">My Profil</p>
+          <p style="font-size: larger; text-align: center">
+            <span style="font-size: 24px; color: aquamarine">Nama</span> :
+            <span style="color: brown">Naufal Hanif</span>
+            <span style="color: deeppink">BS</span>
+            <span style="color: goldenrod">jakarta</span>
+            <br />
+            <span style="color: aqua; font-size: 24px; text-align: center"
+              >TTL :</span
+            >
+            <span style="color: chartreuse">Jakarta Utara,24 Juni 2005</span>
           </p>
-        </h3>
-
-
-
+        </div>
       </div>
 
-
-      <div style="background-color: chartreuse; border-radius: 10px; margin: 10px; padding: 20px;">
+      <div
+        style="
+          background-color: chartreuse;
+          border-radius: 10px;
+          margin: 10px;
+          padding: 20px;
+        "
+      >
         <!-- span : kode untuk membuat 1 kata menjadi besar tanpa harus menggunakan kode bolt(b) -->
-        <h3 style="color: ghostwhite;margin: 20px;"><u>My Hobi</u></h3>
+        <h3 style="color: ghostwhite; margin: 20px"><u>My Hobi</u></h3>
 
-        <p>
-          <span style="color: blueviolet;">saya</span> mempunyai beberapa hobi dan dibelakangnya memiliki <i>cerita-cerita dibelakangnya</i>,seperti : mengotak-atik suatu barang,seperti ada kesenangan tersendiri ketika saya berhasil <b style="color: black;">menemukan</b> suatu hal yang baru.
+        <p class="my-profil">
+          <span style="color: blueviolet">saya</span> mempunyai beberapa hobi
+          dan dibelakangnya memiliki <i>cerita-cerita dibelakangnya</i>,seperti
+          : mengotak-atik suatu barang,seperti ada kesenangan tersendiri ketika
+          saya berhasil <b style="color: black">menemukan</b> suatu hal yang
+          baru.
         </p>
-
-
-
       </div>
 
-
-      <div style="display: flex; flex-direction: column; background-color: aqua; border-radius: 10px; margin: 10px; padding: 20px;">
-
+      <div
+        style="
+          display: flex;
+          flex-direction: column;
+          background-color: aqua;
+          border-radius: 10px;
+          margin: 10px;
+          padding: 20px;
+        "
+      >
         <h3>
-          <u style="color: darkgray;">Cita-Cita</u>
+          <u style="color: darkgray">Cita-Cita</u>
         </h3>
 
-        <p style="color: black;">
-          <span style="color: blueviolet;" >saya</span> mempunyai beberapa cita-cita yang ingin saya gapai,diantaranya : menjadi seorang bermanfaat bagi orang lain,menjadi orang yang sukses didunia dan diakhirat. 
+        <p style="color: black">
+          <span style="color: blueviolet">saya</span> mempunyai beberapa
+          cita-cita yang ingin saya gapai,diantaranya : menjadi seorang
+          bermanfaat bagi orang lain,menjadi orang yang sukses didunia dan
+          diakhirat.
         </p>
-
       </div>
 
+      <div
+        style="
+          background-color: bisque;
+          border-radius: 10px;
+          margin: 10px;
+          padding: 0%;
+        "
+      >
+        <h3
+          style="
+            text-align: left;
+            border-radius: 10px;
+            margin: 10px;
+            padding: 20px;
+          "
+        >
+          Kontak saya
+        </h3>
 
-      <div style="background-color: bisque;border-radius: 10px;margin: 10px; padding:0%">
-
-        <h3 style="text-align: left; border border-radius: 10px; margin: 10px;padding: 20px">Kontak saya</h3>
-
-        <p style="border-radius: 10px;margin: 0px;padding: 10px;"><b style="color: maroon;">Whatsapp</b> : 0812-8411-5736 <br><b style="color: maroon;">Telegram</b> : Naufal hanif <br><b style="color: maroon;">Instagram</b><a href="https://www.instagram.com/nf_hanif/" target="_blank"> : @nf_hanif</a> <br> <b style="color: maroon;">Email</b> : hnaufal0624@gmail.com
-         </p>
-
+        <p style="border-radius: 10px; margin: 0px; padding: 10px">
+          <b style="color: maroon">Whatsapp</b> : 0812-8411-5736 <br /><b
+            style="color: maroon"
+            >Telegram</b
+          >
+          : Naufal hanif <br /><b style="color: maroon">Instagram</b
+          ><a href="https://www.instagram.com/nf_hanif/" target="_blank">
+            : @nf_hanif</a
+          >
+          <br />
+          <b style="color: maroon">Email</b> : hnaufal0624@gmail.com
+        </p>
       </div>
     </div>
 
     <footer>
-      <p style="text-align: center;">&copy;2025 Naufal Hanif</p>
+      <p style="text-align: center">&copy;2025 Naufal Hanif</p>
     </footer>
   </body>
-  </html>
+</html>
