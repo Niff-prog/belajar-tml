@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!-- data-theme : untuk menentukan web nya dark atau light -->
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+    />
+  </head>
+  <body>
+    <!-- class container : untuk kotaknya ditengah -->
+    <main class="container">
+      <h1>HTML 5 Form</h1>
+      <hr />
+      <form>
+        <div>
+          <!-- tips shortcut: input:[type-nya] -->
+          <label for="inputName">Nama Lengkap</label>
+          <!-- type : untuk menentukan dengan teks atau nomor -->
+          <!-- name :nama  -->
+          <!-- id : harus sama namanya dengan nama di labelfor   -->
+          <input type="text" name="nama" id="inputName" />
+        </div>
+
+        <div>
+          <!-- tips shortcut: input:[type-nya] -->
+          <label for="inputAge">Umur</label>
+          <input type="number" name="umur" id="inputAge" />
+        </div>
+
+        <div>
+          <label for="inputBio">Biografi</label>
+          <textarea name="bio" id="inputBio"></textarea>
+        </div>
+
+        <div>
+          <p>Jenis Kelamin</p>
+          <input type="radio" name="jenis_kelamin" id="inputLanang" />
+          <label for="inputLanang">laki-laki</label>
+          <input type="radio" name="jenis_kelamin" id="inputWedok" />
+          <label for="inputWedok">Perempuan</label>
+          <br /><br />
+        </div>
+
+        <div>
+          <p>Hobi/Minat</p>
+          <input type="checkbox" name="hobi" id="inputMancing" />
+          <label for="inputMancing">Mancing</label>
+          <input type="checkbox" name="hobi" id="inputTuru" />
+          <label for="inputTuru">Turu</label>
+          <input type="checkbox" name="hobi" id="inputFutsal" />
+          <label for="inputFutsal">Futsal</label>
+          <input type="checkbox" name="hobi" id="inputAnime" />
+          <label for="inputAnime">Anime</label>
+          <br /><br />
+        </div>
+
+        <div>
+          <label for="inputAsal">Asal Daerah</label>
+          <!-- tips schortcut : select>option*4 -->
+          <select name="asal_daerah" id="inputAsal">
+            <option value="JKT">Jakarta</option>
+            <option value="YOG">Yogyakarta</option>
+            <option value="PRJ">Purworejo</option>
+            <option value="BKS">Bekasi</option>
+          </select>
+        </div>
+
+        <div >
+            <label for="inputPhoto">Upload Foto</label>
+            <input type="file" name="foto" id=inputPhoto>
+        </div>
+
+
+         <div >
+            <label for="inputPass">Password</label>
+            <input type="password" name="password" id=inputPass">
+         </div>
+
+         <div>
+            <label for="inputDate">Tanggal</label>
+            <input type="date" name="date" id="inputDate">
+         </div>
+
+
+        <!-- acction buttons -->
+        <!-- tips shortcut: button:[type-nya] -->
+        <!-- button r : reset -->
+        <!-- button s : kirim -->
+        <!-- grid :  -->
+        <div class="grid">
+          <button type="reset">batalkan</button>
+          <button type="submit">kirim</button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
